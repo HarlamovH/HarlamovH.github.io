@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Мой блог</title>
+	<link href="https://fonts.googleapis.com/css2?family=Spectral+SC&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<div class="top">
+			<img class="fonFoto" src="images/main.png" alt="ЭТО Я">
+			<div class= "logo">
+				<img src="logo/logo_top.svg">
+			</div>
+			<nav class="menu">
+				<p>Статьи</p>
+				<p>Обо мне</p>
+				<p>Портфолио</p>
+				<p>Написать мне</p>
+			</nav>
+		</div>
+	</header>
+
+	<section class="preview "> <!-- превью-блок со статьями-->
+		<div class="topColumns">
+			<h2>Все статьи</h2>
+			 <!-- выбор темы статьи -->
+					<form method="post">
+
+						<select  class="choose" name="theme">   
+							
+							 <option>Выбрать тему</option>
+					        <option value="travel">Путешествия</option>
+					        <option value="foto">Фотографии</option>  
+					        <option value="city">Город</option>
+					        <option value="books">Книги</option>
+					        <option value="recept">Рецепты</option>
+			    		</select>
+			    	</form>
+		</div>
+		<div class="flexboxColumn">
+
+			<div class="smallColumns clearfix">
+			<!--Статья про Берлин -->
+
+				<figure class="clearfix">
+					<a href="#" class="clearfix">
+					<img src="images/columns/berlin.png">
+					<figcaption>
+						<h3>Путешествие в Берлин в августе</h3>
+						<div>Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!
+						</div>
+						<div>
+							<p>Теги: путешествия</p>
+							<p>29.09.2020</p>
+						</div>
+					</figcaption>
+					</a>
+				</figure>
+
+				
+			 <!-- Про напиток-->
+
+				<figure>
+					<a href="#" class="clearfix">
+					<img src="images/columns/coldbro.png">
+					<figcaption>
+						<h3>Где выпить колдбрю в Москве</h3>
+						<div>
+							Собрала для вас список любимых кофеен, где подают лучший летний напиток.
+						</div>
+						<div>
+							<p>Теги: город</p>
+							<p>24.07.2020</p>
+						</div>
+					</figcaption>
+					</a>
+				</figure>
+			
+			 <!-- Чтение книг-->
+
+				<figure>
+					<a href="#" class="clearfix">
+					<img src="images/columns/recomendet.png">
+					<figcaption>
+						<h3>Прочитано: книжные рекомендации</h3>
+						<div>
+							Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.
+						</div>
+						<div>
+							<p>Теги: книги</p>
+							<p>15.07.2020</p>
+						</div>
+					</figcaption>
+					</a>
+				</figure>
+			
+			</div>
+
+			  <!-- фотографии-->
+			<div class="bigColumns">
+
+				<a href="#" class="">
+				<figure>
+					<!-- <img src="images/columns/plenka.png"> -->
+					
+					<figcaption>
+						<h3>Снимки на плёнку</h3>
+						<div>
+							Поделилась с вами весенними фотографиями, и секретами удачных снимков.
+						</div>
+						<div>
+							<p>Теги: фотографии</p>
+							<p>29.06.2020</p>
+						</div>
+					</figcaption>
+				
+				</figure>
+				</a>
+			  <!-- Рецепт чизкейка-->
+				<a href="#" class="">
+				<figure>
+					<!-- <img src="images/columns/cheeskek.png"> -->
+					
+					<figcaption>
+						<h3>Домашний чизкейк</h3>
+						<div>Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!</div>
+						<div>
+							<p>Теги: рецепты</p>
+							<p>24.06.2020</p>
+						</div>
+					</figcaption>
+
+				</figure>
+				</a>
+			</div>
+		</div>
+
+		<div class="more">
+			<button>
+				<a href="#">
+				Показать еще
+				</a>
+			</button>
+		</div>
+	</section>
+
+<!-- /////////////блок обо мне///////////////////// -->
+	<section class="aboutMe clearfix">
+		<h2>Обо мне</h2>
+		<div class="info">
+				<div>
+				<img src="images/about_me.png" alt="обо мне">
+				</div>
+			<article>
+			<div class="hello"> <!-- Текст обо мне-->
+
+				<p>Всем привет! Меня зовут Аня, и это мой личный блог.<br>
+				Здесь ты найдёшь рассказы о моих путешествиях, снимки
+				на плёнку, рецепты, обзоры на книги. В общем, тексты о том,
+				что мне инетресно.</p><br>	
+
+				<p>Я работаю копирайтером, поэтому мой блоге — это ещё и моё
+				портфолио. Ниже размещены несколько моих лучших
+				рабочих текстов. Буду рада новым сотрудничествам!</p><br>
+
+				<p>Если вы хотите написать мне — это можно сделать в соцсетях
+				или через форму. Всегда приятно услышать обратную связь
+				от читателей и познакомиться поближе.</p><br>
+
+				Приятного чтения!
+
+			</div>
+			<div class="kredo"> <!-- Девиз-->
+				
+				<p>Я верю, что каждый раз пробуя новое,
+				выходящее за зону моего комфорта,<br>
+				я действительно узнаю настояющую
+				себя. </p>
+			</div>
+		</article>
+		</div>
+	</section>
+
+
+<!-- ///////////////Портфолио///////////////////// -->
+	<section class="portfol">
+		<h2>Портфолио</h2>
+
+		<article>
+			<a href="#" class="first">
+				<div >
+					<h3>Блог HTML Academy</h3>
+						<h4>«Как учиться продуктивно»</h4>
+						<p>Про основные методы обучения,
+						которые помогут быстро и надолго
+						запомнить информацию.</p>
+				</div>
+			</a>
+
+			<a href="#" class="second">
+			<div >
+				<h3>Журнал "Link"</h3>
+					<h4>«Зачем поцели нужны человеку? <br>И какие они бывают»</h4>
+					<p>Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются? Какие смысли вкладывают в этот ритуал? И где корни этой практики?</p>
+			</div>
+		</a>
+
+			<a href="#" class="third">
+			<div>
+				<h3>Журнал "Т <del>  </del> Л"</h3>
+					<h4>«Советы по эффективной
+					<br>удалённой работе»</h4>
+					<p>Поделилась лайфхаками, которые помогают
+					мне работать продуктивно из дома. </p>
+			</div>
+		</a>
+		</article>
+
+		<div class="more">
+			<button >
+				<a href="#">
+				Показать еще
+				</a>
+			</button>
+		</div>
+
+	</section>
+<!-- ////////////////Форма связи////////////////////// -->
+	<section class="writeMe">
+		<h2>Написать мне</h2>
+
+		<div class="forma">
+			<div class="container">
+				<div class="topForm">
+					<form class="name">
+						<label for="nam">Ваше имя<br></label>
+							<input type="text" name="name" id="nam" placeholder="Иван Иванов">
+						
+					</form>
+
+					<form class="email">
+						<label for="mail">Email<br></label>
+							<input type="email" id="mail" name="mail" placeholder ="google@gmail.com">
+						
+					</form>
+				</div>
+
+				<form class="message">
+					<label for="mess">Сообщение<br></label>
+						<textarea id="mess" placeholder="Напишите здесь ваше сообщение"></textarea>
+					
+				</form>
+				
+			</div>
+				<input type="button" name="send" value="Отправить">
+			
+		</div>
+	</section>
+
+</body>
+</html>

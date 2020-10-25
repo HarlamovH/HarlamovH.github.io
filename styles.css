@@ -1,0 +1,649 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 1440px;
+}
+
+h2{
+	font-family: 'Spectral SC', serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 55px;
+	color: #2E2F22;
+	clear: both;
+	margin-top: 85px;
+	margin-bottom: 49px;
+	text-align: center;
+}
+
+
+.top{
+	width: 1440px;
+	height: 581px;
+	margin-bottom: 83px;
+}
+
+.top .fonFoto{
+	position: absolute;
+	width: 1440px;
+	height: 581px;
+	left: 0px;
+	top: 0px;
+	z-index: -10;
+	
+}
+
+.logo img{
+	position: absolute;
+	width: 130px;
+	height: 82.51px;
+	left: 120px;
+	top: 4px;
+}
+
+ a:link{
+	text-decoration: none;
+}
+ a:visited{
+	
+	color: #303030;
+}
+ a:active{
+	
+}
+
+
+
+/* тоже работает для меню
+.top .menu {
+	position: absolute;
+	left: 710px;
+	top: 33px;
+}
+
+
+.top .menu p{
+display: inline-block;
+
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	color: #2E2F22;
+	height: 25px;
+
+	margin-right: 83px;
+}
+*/
+
+.top .menu { /*Почему при задании 
+	хедеру float: left меню сдвигается, а лого нет?? float: right;
+	margin-right: 121px;*/
+
+	/*адаптивное меню*/
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+
+.top .menu p{
+	
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	color: #2E2F22;
+	height: 25px;
+	margin-right: 83px;
+	margin-bottom: 0px;
+	margin-top: 25px;
+	
+}
+
+.top .menu p:last-child{
+	margin-right: 121px;
+
+}
+
+
+/* //////////////////////Все статьи///////*/
+section.preview{
+	text-align: center;
+	clear: both;
+	width: 1200px;
+	height: 1290px;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 85px;
+}
+
+
+/*....................Превьюши статей.....*/
+.preview h2{
+	font-family: 'Spectral SC', serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 55px;
+	/* identical to box height */
+	color: #2E2F22;
+
+	margin: 0px;
+	padding-top: 0px;
+
+}
+
+.topColumns{
+	display: flex;
+	justify-content: space-between;
+}
+
+.choose{
+	/*width: 203px;
+	height: 46px;*/
+	
+	border: 0px;
+	border-radius: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 20px;
+	padding-right: 74px;
+	appearance: none;
+	background: local #D7D1C9 url('images/icons/Polygon1.png') 150px center no-repeat;
+	
+}
+
+.choose option{
+	margin-left: 20px;
+	font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+color: #2E2F22;
+padding: auto;
+
+}
+
+
+
+.smallColumns figure:hover{
+	filter: drop-shadow(5px 5px 10px #303030);
+	transform: scale(1.01);
+}
+
+.bigColumns a:hover{
+	filter: drop-shadow(10px 10px 5px #303030);
+	transform: scale(1.01);
+}
+
+/* ........... Маленькие блоки. Превью  .......*/
+.smallColumns figure{
+	width: 387px;
+	height: auto;
+	float: left;
+	margin-left: 0px;
+	margin-right: 19px;
+	margin-top: 49px;
+	margin-bottom: 0px;
+}
+
+
+
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+ .smallColumns figure:last-child{
+	margin-right: 0px;
+}
+
+
+/*........текст в блоках превью......*/
+		/* Заголовки...........*/
+ .smallColumns h3{
+	margin-top: 27px;
+	margin-bottom: 8px;
+	float: left;
+	font-family: 'Spectral SC';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 27px;
+
+	color: #2E2F22;
+}
+
+/* ..........текст............*/
+ .smallColumns  figcaption{
+	float: left;
+
+}
+
+
+ .smallColumns figcaption div:nth-of-type(1){
+	font-family: 'Open Sans', sans-serif;;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #2E2F22;
+	text-align: left;
+	clear: both;
+
+}
+
+.smallColumns figcaption div:last-of-type{
+	 
+	padding-top: 12px;
+
+	font-family: 'Open Sans', sans-serif;;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	/* identical to box height, or 162% */
+	color: rgba(46, 47, 34, 0.7);
+}
+
+.smallColumns p{
+	margin: 0;
+	float: left;
+}
+
+.smallColumns p:last-of-type{
+	float: right
+}
+
+
+
+/*............Большие блоки. Превью.........*/
+
+.bigColumns{
+	margin-left: 0px;
+	margin-top: 62px;
+	
+}
+
+.bigColumns a{
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: auto;
+}
+
+.bigColumns  a:first-of-type{
+	background: url('images/columns/plenka.png');
+	background-attachment: local;
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+.bigColumns  a:last-of-type{
+	float: right;
+	background: url('images/columns/cheeskek.png');
+	background-attachment: local;
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+.bigColumns a{
+	width: 590px;
+	height: 552px;
+}
+
+/*........Положение текста в больших блоках превью......*/
+
+.bigColumns figcaption{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	
+	margin-left: 82px;
+	margin-right: 79px;
+	margin-top: 359px;
+}
+/*...............Заголовки больших блоков...........*/
+.bigColumns figcaption h3{
+	margin-top: 0px;
+	margin-bottom: 8px;
+
+	font-family: 'Spectral SC';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 30px;
+	color: #FFFFFF;
+}
+
+/*...........Текст больших...............*/
+
+.bigColumns figcaption div{
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.bigColumns figcaption div:first-of-type{
+	font-size: 18px;
+	line-height: 28px;
+	color: #FFFFFF;
+	text-align: left;
+	margin-bottom: 12px;
+
+}
+
+.bigColumns figcaption div:last-of-type{
+	font-size: 16px;
+	line-height: 26px;
+	color: rgba(255, 255, 255, 0.7);
+	align-self: stretch;
+	display: flex;
+	justify-content: space-between;
+}
+
+.bigColumns figcaption p{
+	margin: 0px;
+	
+}
+
+/*...........кнопка Показать еще..........*/
+
+
+
+.more button{
+	margin-top: 104px;
+	border: 1px solid #202117;
+	width: 224px;
+	height: 46px;
+	border-radius: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	background-color: #fff;
+
+}
+
+.more button:hover{
+	filter: drop-shadow(5px 5px 5px #303030);
+	transform: scale(1.01);
+}
+
+
+
+
+
+
+/*......Блок Обо мне............*/
+
+section.aboutMe{
+	text-align: center;
+	width: 1200px;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 85px;
+}
+
+
+.aboutMe article{
+	float: left;
+	margin-top: 42px;
+	margin-left: 20px;
+}
+
+.info img{
+	float: left;
+	width: 590px;
+	height: 693px;
+}
+
+.info p{
+	margin: 0px;
+}
+
+.info .hello{
+	width: 497px;
+	height: 366px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #2E2F22;
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 71px;
+	margin-left: 20px;
+	margin-right: 0px;
+}
+.info .kredo{
+	width: 550px;
+	height: 160px;
+	font-family: Open Sans;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 40px;
+	color: #2E2F22;
+	text-align: left;
+	margin: 0px;
+	border-left: 3px solid #D7D1C9;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*////////////////Портфолио//////////////////////*/
+
+.portfol {
+	width: 1200px;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	text-align: center;
+}
+
+.portfol .first{
+	background: url('images/portfolio/part1.png');
+	background-attachment: local;
+	background-size: auto;
+	background-repeat: no-repeat;
+	width: 387px;
+	height: 525px;
+	filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+.portfol .second{
+	background: url('images/portfolio/part2.png');
+	background-attachment: local;
+	background-size: auto;
+	background-repeat: no-repeat;
+	width: 387px;
+	height: 525px;
+	filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+	
+}
+
+.portfol .third{
+	background: url('images/portfolio/part3.png');
+	background-attachment: local;
+	background-size: auto;
+	background-repeat: no-repeat;
+	width: 387px;
+	height: 525px;
+	filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+.portfol article{
+	display: flex;
+	justify-content: space-between;
+}
+
+.portfol article h3,h4{
+	font-family: Spectral SC;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 30px;
+	color: #2E2F22;
+	text-align: center;
+	margin-top: 140px;
+	margin-bottom: 44px;
+}
+
+.portfol article h4{
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 17px;
+	margin-top: 0px
+}
+
+.portfol article p{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	color: #2E2F22;
+	padding: 0px 55px;
+	margin: 0px;
+}
+
+.portfol article a.second h3, 
+a.second h4, 
+a.second p{
+	color: #FFFFFF;
+}
+
+/*//////////////Анимация ссылок///////////////////*/
+
+.portfol a:hover{
+	filter: drop-shadow(10px 10px 5px #303030);
+	transform: scale(1.01);
+}
+
+/*//////////////форма Написать мне//////////////////////////*/
+
+.writeMe{
+	width: 996px;
+	height: 741px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.forma{
+	background: local url('images/fon_ask.png') no-repeat;
+	width: 996px;
+	height: 637px;
+
+}
+
+/*///////////////Формат текста форм //////////////*/
+
+.writeMe label{
+font-family: Spectral SC;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+color: #2E2F22;
+
+}
+
+.writeMe input, textarea{
+	
+	background: rgba(255, 255, 255, 0.4);
+	border: 1px solid #202117;
+	box-sizing: border-box;
+	border-radius: 10px;
+
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #202117;
+	padding: 20px;
+}
+
+
+.writeMe textarea{
+	width: 837px;
+	height: 293px;
+}
+
+.writeMe .forma{
+	text-align: center;
+	padding-top: 53px;
+}
+
+.forma .container{
+	
+    margin-left: 81px;
+    margin-right: 81px;
+    
+}
+
+.container  label{
+	margin-bottom: 12px;
+	float: left;
+}
+
+.message {
+	margin-top: 20px;
+}
+
+
+.name input, .email input {
+	width: 407px;
+	height: 63px;
+
+}
+
+/*/////////////Положение форм/////////////*/
+
+.topForm{
+	display: flex;
+	justify-content: space-between;
+}
+
+.forma input[type="button"]{
+	margin-top: 20px;
+	width: 224px;
+	height: 46px;
+	border: 1px solid #202117;
+	box-sizing: border-box;
+	border-radius: 10px;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #202117;
+	vertical-align: center;
+	padding: 0px;
+	background: rgba(255, 255, 255, 0.0);
+	
+}
+
+
+
+
+
